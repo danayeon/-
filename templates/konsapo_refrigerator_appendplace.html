@@ -1,0 +1,15 @@
+{% extends 'konsapo_refrigerator_layout.html' %}
+{% block content %}
+<div class="content append_place">
+  <form class="" action="/append_place/fin" method="post">
+    <table>
+      <tr>
+        <th>保存場所</th>
+        <td><input type="text" name="place" for="place"></td>
+      </tr>
+    </table>
+    <center><input type="submit" value="登録"></center>
+  </form>
+</div>
+
+{% endblock %}

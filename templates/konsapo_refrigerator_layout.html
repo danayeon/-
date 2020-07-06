@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=ja>
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{title}}</title>
+    {% else %}
+      <title>食材管理-こんさぽ</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/konsapo_refrigerator_stylesheet.css">
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      {% if char_word %}
+        <p class="char_word">{{char_word}}</p>
+      {% else %}
+        <p class="char_word">画面にしたがって操作してください</p>
+      {% endif %}
+      <div class="layout_img_div">
+        <img class="layout_img" src="https://stockmaterial.net/wp/wp-content/uploads/img/animal_squirrel01_01.png" alt="うさぎ">
+      </div>
+      {% block content %}{% endblock %}
+      <br>
+      <a class="go_top" href="/">トップに戻る</a>
+    </main>
+    <footer>
+      <div class="footer_home">
+        <a href="#"><img src="imges/icon_home.png" alt="ホーム"></a>
+
+      </div>
+      <div class="footer_ref">
+        <a href="/"><img src="" alt="冷蔵庫"></a>
+      </div>
+      <div class="footer_easy">
+        <a href="#"><img src="" alt="かんたん"></a>
+      </div>
+      <div class="footer_vender">
+        <a href="/gacha"><img src="" alt="ガチャ"></a>
+      </div>
+      <div class="footer_etc">
+        <a href="#"><img src="" alt="その他"></a>
+      </div>
+    </footer>
+  </body>
+</html>

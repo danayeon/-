@@ -1,0 +1,11 @@
+{% extends 'konsapo_refrigerator_layout.html' %}
+{% block content %}
+<div class="content foodlist">
+  <form action="/foodlist/result" method="post">
+    <table>
+      {{food_place | safe}}
+    </table>
+    <center><input type="submit" name="search" value="検索"></center>
+  </form>
+</div>
+{% endblock %}

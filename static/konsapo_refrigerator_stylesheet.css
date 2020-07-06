@@ -1,0 +1,241 @@
+/*食材管理ページ全体のレイアウト*/
+body {
+  background-color: #ffff30;
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  position: absolute;
+  top:43%;
+  right: 12.5%;
+  margin: auto;
+  width: 75%;
+  border-spacing: 20px;
+  height: 40%;
+}
+.move_button {
+  border: solid 20px #000080;
+  border-radius: 500px;
+}
+footer {
+  position: fixed;
+  bottom:0;
+  left: 0px;
+  height: 8%;
+  width: 100%;
+  background-color: white;
+}
+footer div {
+
+  display: inline-block;
+}
+.footer_home {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: red;
+  background-image: url(../images/icon_home.png);
+}
+/*
+.footer_home img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+*/
+.footer_ref {
+  position: absolute;
+  left: 20%;
+  height: 100%;
+  width: 20%;
+  background-color: blue;
+}
+.footer_easy {
+  position: absolute;
+  left: 40%;
+  height: 100%;
+  width: 20%;
+  background-color: yellow;
+}
+.footer_vender {
+  left: 60%;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background-color: green
+}
+.footer_etc {
+  left: 80%;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background-color: pink;
+}
+
+/*食材管理レイアウト*/
+.char_word {
+  text-align: center;
+  height: 3.2%;
+  width:60%;
+  font-size: 50px;
+  position: absolute;
+  top:5%;
+  left:20%;
+  margin: 0px;
+  font-family: 'arial unicode ms';
+}
+.layout_img {
+  height:100%;
+}
+.layout_img_div {
+  width: 100%;
+  height:27%;
+  position: absolute;
+  top:13%;
+  text-align: center;
+}
+.go_top {
+  position: absolute;
+  font-size: 35px;
+  top:85%;
+  right:10%;
+  display: block;
+  width: 100%;
+  height: 2.5%;
+  text-align: right;
+  text-decoration: none;
+  color:black;
+}
+/*食材管理のメインメニュー*/
+.ref_top table {
+  position: absolute;
+  top:0;
+  margin:0;
+  width: 100%;
+  border-spacing: 20px;
+  height: 100%;
+}
+.ref_top a {
+  font-size: 60px;
+  text-align: center;
+  color: black;
+  display: block;
+  padding:10px 20px;
+  text-decoration: none;
+  font-family: 'arial unicode ms';
+}
+/*食材追加*/
+.ref_reg form {
+  height: 100%;
+  width: 100%;
+}
+.ref_reg table {
+  height: 80%;
+  width: 100%;
+}
+.ref_reg th {
+  height: 25%;
+  font-size: 60px;
+  width: 40%;
+}
+.ref_reg table input {
+  height: 50%;
+  width: 100%;
+  font-size: 60px;
+}
+.ref_reg select {
+  height: 50%;
+  font-size: 60px;
+}
+.ref_reg center {
+  height: 20%;
+}
+.ref_reg center input{
+  height: 100%;
+  font-size: 50px;
+  width:30%;
+}
+/*食材追加完了画面*/
+.foodreg_p {
+  text-align: center;
+}
+/*保存場所別食材確認*/
+.foodlist form {
+  height: 100%;
+  width: 100%;
+}
+.foodlist table {
+  height: 80%;
+  width:100%;
+}
+.foodlist td {
+  height: 25%;
+  width: 100%;
+}
+.checkbox {
+  margin:0 0 10px 20px;
+}
+.checkbox label{
+  padding-left: 65px;
+  font-size: 60px;
+  line-height: 60px;
+  display:inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox label:before {
+  content: '';
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  box-shadow: inset 1px 2px 3px 0px#000;
+  border-color: #000080;
+  border-radius: 6px;
+}
+.checkbox input[type=checkbox]{
+  display: none;
+}
+.checkbox input[type=checkbox]:checked+label:before {
+  content: '\2713';
+  font-size: 65px;
+  color: #fff;
+  background-color: #000080;
+}
+.foodlist center {
+  height: 20%;
+}
+.foodlist center input {
+  font-size: 60px;
+}
+/*献立提案*/
+.suggestmenu_p {
+  text-align: center;
+}
+/*保存場所の追加*/
+.append_place form {
+  height: 100%;
+  width: 100%;
+}
+.append_place table {
+  height: 20%;
+}
+.append_place th {
+  height: 100%;
+  width: 40%;
+  font-size: 60px;
+}
+.append_place table input {
+  height: 50%;
+  width: 100%;
+  font-size: 60px;
+}
+.append_place center input {
+  height: 50%;
+  width: 100%;
+  font-size: 60px;
+}
